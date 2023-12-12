@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.Heading {
+    margin: 20px;
+    width: 25%;
+    text-align: left;
+}
+
+.container {
+    /* border: 1px solid #ffffff; */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.Heading h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    color: white;
+}
+
+.Heading p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    color: white;
+}
+
+.input input {
+    appearance: none;
+    background-image: none;
+    color: white !important;
+    margin-top: 5px;
+    border: 0px;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    inline-size: 80%;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin-block: 0px;
+    border-radius: var(--encore-border-radius-medium, 4px);
+    padding-inline: 14px;
+    padding-block-start: var(--encore-spacing-minus-2, 8px);
+    padding-block-end: var(--encore-spacing-minus-2, 8px);
+    min-block-size: var(--encore-control-size-medium, 48px);
+    background-color: #121212 !important;
+    box-shadow: inset 0 0 0 1px var(--essential-subdued, #878787);
+    color: var(--text-base, #000000);
+}
+
+.input input:hover {
+    border-color: rgb(26, 173, 26);
+}
+
