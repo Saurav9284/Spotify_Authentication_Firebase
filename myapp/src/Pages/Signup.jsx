@@ -1,5 +1,6 @@
 import React from 'react'
-
+import googlelogo from '../Assets/googlelogo.png'
+import faceebook from '../Assets/faceebook.png'
 import '../Styles/signup.css'
 
 const Signup = () => {
@@ -14,7 +15,7 @@ const Signup = () => {
                  <div className='input'>
                  <input type="email" id="username" name="username" placeholder="name@domain.com"/>
                  </div>
-                 <a href="#">Use phone number instead.</a>
+                 <a id="phone"href="#">Use phone number instead.</a>
                  <button>Next</button>
                  <div className='line-container'>
                       <div className='line-segment'></div>
@@ -22,8 +23,24 @@ const Signup = () => {
                       <div className='line-segment'></div>
                 </div>
 
-             </div>
-
+                <div>
+                <a href="#" class="ButtonGoogle"><span id='logog'><img src={googlelogo} width={25} height={24}/></span>Sign up with Google</a>
+                </div>
+                <div>
+                <a href="#" class="ButtonGoogle"><span id='logog'><img src={faceebook} width={27} height={27}/></span>Sign up with Facebook</a>
+                </div>
+                <div className='line-container'>
+                      <div className='line-segment'></div>
+                      <div className='line-segment'></div>
+                </div>
+                <div id='parag'>
+                   <p ><span class="para">Already have an account? <a href="#">Log in here</a>.</span></p>
+                </div >
+                <div className='foot'>
+                <p id='footer'>This site is protected by reCAPTCHA and the Google Privacy Policy Terms of Service apply.</p>
+                </div>
+                
+                </div>
         </div> 
 
       </div>

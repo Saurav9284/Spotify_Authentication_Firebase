@@ -6,6 +6,7 @@
     margin: 20px;
     width: 23%;
     text-align: left;
+     /* border: 1px solid #ffffff; */
 }
 
 .container {
@@ -57,15 +58,16 @@
 .input input:hover {
     border-color: rgb(26, 173, 26);
 }
-.Heading a{
+#phone{
     margin-top: 15px;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     color: var(--text-bright-accent,#11e35e);
     -webkit-box-align: center;
     font-size: small;
-    
+    font-weight: bold;
 }
+
 .Heading button{
     margin-top: 20px;
     box-sizing: border-box;
@@ -111,7 +113,63 @@
     color: white;
 }
 
+.ButtonGoogle{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 0.9rem!important;
+    font-weight: 700;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    background-color: #121212;
+    border-radius: 500px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    user-select: none;
+    vertical-align: middle;
+    transform: translate3d(0px, 0px, 0px);
+    position: relative;
+    border: 1px solid var(--essential-subdued,rgb(255, 255, 255));
+    color: white!important;
+    min-block-size: 48px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+    inline-size: 90%;
+    padding-inline: 14px;
+    padding-block-start: var(--encore-spacing-minus-2, 8px);
+    padding-block-end: var(--encore-spacing-minus-2, 8px);
+    min-block-size: var(--encore-control-size-medium, 48px);
+    margin-top: 7%;
+}
 
-
+#logog{
+   margin-left: -7%;
+}
+#parag{
+    margin-top: 6%;
+}
+.para{
+    margin-left: 11%;
+    color: #6a6a6a;
+    font-size: 15px;
+}
+#footer{
+    margin-top: 7%;
+    color: #6a6a6a;
+    size: 1px !important;
+    font-size:11px !important;
+}
+.foot{
+    text-align: center;
+}
+.Heading a{
+    color: white;
+}
 
 
