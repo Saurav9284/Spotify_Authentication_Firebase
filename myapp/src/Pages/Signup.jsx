@@ -14,6 +14,14 @@ const Signup = () => {
                  <div className='input'>
                  <input type="email" id="username" name="username" placeholder="name@domain.com"/>
                  </div>
+                 <a href="#">Use phone number instead.</a>
+                 <button>Next</button>
+                 <div className='line-container'>
+                      <div className='line-segment'></div>
+                      <span className='or-text'>or</span>
+                      <div className='line-segment'></div>
+                </div>
+
              </div>
 
         </div> 

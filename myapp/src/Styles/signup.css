@@ -4,7 +4,7 @@
 
 .Heading {
     margin: 20px;
-    width: 25%;
+    width: 23%;
     text-align: left;
 }
 
@@ -40,7 +40,7 @@
     font-weight: 400;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
-    inline-size: 80%;
+    inline-size: 90%;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     margin-block: 0px;
@@ -57,4 +57,61 @@
 .input input:hover {
     border-color: rgb(26, 173, 26);
 }
+.Heading a{
+    margin-top: 15px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    color: var(--text-bright-accent,#11e35e);
+    -webkit-box-align: center;
+    font-size: small;
+    
+}
+.Heading button{
+    margin-top: 20px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    background-color: #11e35e;
+    border: 0px;
+    border-radius: 500px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    vertical-align: middle;
+    transform: translate3d(0px, 0px, 0px);
+    min-inline-size: 0px;
+    align-self: center;
+    inline-size: 90%;
+    padding-inline: 14px;
+    padding-block-start: var(--encore-spacing-minus-2, 8px);
+    padding-block-end: var(--encore-spacing-minus-2, 8px);
+    min-block-size: var(--encore-control-size-medium, 48px);
+}
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.line-segment {
+    flex: 1;
+    height: 0.5px;
+    background-color: white;
+}
+
+.or-text {
+    margin: 0 10px; /* Adjust the spacing between the line and the "or" text */
+    color: white;
+}
+
+
+
+
 
