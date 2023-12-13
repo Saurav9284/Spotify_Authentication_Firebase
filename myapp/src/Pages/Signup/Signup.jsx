@@ -1,8 +1,8 @@
 import React from 'react'
-import googlelogo from '../Assets/googlelogo.png'
-import faceebook from '../Assets/faceebook.png'
-import '../Styles/signup.css'
-import SpotifyLogo from '../Assets/SpotifyLogo.png'
+import googlelogo from '../../Assets/googlelogo.png'
+import faceebook from '../../Assets/faceebook.png'
+import '../../Styles/signup.css'
+import SpotifyLogo from '../../Assets/SpotifyLogo.png'
 
 const Signup = () => {
   
