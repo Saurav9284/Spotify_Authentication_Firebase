@@ -2,10 +2,18 @@ import React from 'react'
 import googlelogo from '../Assets/googlelogo.png'
 import faceebook from '../Assets/faceebook.png'
 import '../Styles/signup.css'
+import SpotifyLogo from '../Assets/SpotifyLogo.png'
 
 const Signup = () => {
+  
     return (
       <div className='signupmain'>
+
+         <div className='navbarauth'>
+           <div className='logo'>
+               <img src={SpotifyLogo} width={50}/><label>Spotify</label>
+           </div>
+         </div>
 
          <div className='container'>
 

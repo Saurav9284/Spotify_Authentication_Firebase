@@ -1,7 +1,27 @@
 * {
     box-sizing: border-box;
 }
-
+.logo {
+    display: flex;
+    align-items: center;
+  }
+.navbarauth{
+   padding: 1%;
+}
+  .logo img {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px; 
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .logo label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+  }
 .Heading {
     margin: 20px;
     width: 23%;
@@ -172,5 +192,4 @@
     
     color: white;
 }
-
 
