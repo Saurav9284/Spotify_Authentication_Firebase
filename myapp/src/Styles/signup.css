@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .logo {
     display: flex;
     align-items: center;

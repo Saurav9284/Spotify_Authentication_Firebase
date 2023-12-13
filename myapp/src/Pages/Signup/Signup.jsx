@@ -18,6 +18,7 @@ const Signup = () => {
          <div className='container'>
 
              <div className='Heading'>  
+            
                  <h1>Sign up to start listening</h1>
                  <p>Email adress</p>
                  <div className='input'>
