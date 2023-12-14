@@ -1,10 +1,14 @@
-import Signup from './Pages/Signup';
+
+import Homepage from './Pages/Homepage';
+import Allroutes from './Routes/Allroutes';
+
 
 function App() {
   return (
     <div className="App">
-      <Signup/>
 
+         <Allroutes/>
+      
     </div>
   );
 }

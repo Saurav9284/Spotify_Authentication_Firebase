@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    background-color: #121212;
 }
 
 .logo {
@@ -162,7 +163,7 @@
     align-items: center;
     -webkit-box-pack: center;
     justify-content: space-around;
-    inline-size: 90%;
+    inline-size: 90%!important;
     padding-inline: 14px;
     padding-block-start: var(--encore-spacing-minus-2, 8px);
     padding-block-end: var(--encore-spacing-minus-2, 8px);
@@ -194,4 +195,5 @@
     
     color: white;
 }
+
 

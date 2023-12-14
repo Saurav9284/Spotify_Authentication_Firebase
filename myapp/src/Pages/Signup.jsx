@@ -86,10 +86,10 @@ const Signup = () => {
                       <div className='line-segment'></div>
                 </div>
 
-                <div onClick={handlegoogle}>
+                <div onClick={handlegoogle} id='social'>
                 <a href="#" class="ButtonGoogle"><span id='logog'><img src={googlelogo} width={25} height={24}/></span>Sign up with Google</a>
                 </div>
-                <div>
+                <div id='social'>
                 <a href="#" class="ButtonGoogle"><span id='logog'><img src={faceebook} width={27} height={27}/></span>Sign up with Facebook</a>
                 </div>
                 <div className='line-container'>

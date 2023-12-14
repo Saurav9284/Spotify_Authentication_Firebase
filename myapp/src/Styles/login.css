@@ -1,8 +1,7 @@
-
-
 body{
     /* border: 1px solid red; */
     /* margin-top: 3%; */
+    background-color: #121212;
 }
 
 .logo {
@@ -43,7 +42,7 @@ body{
     /* border: 1px solid red; */
      width: 55%;
      margin: auto;
-    margin-top: -2%;
+     margin-top: -2%;
 }
 
 .LoginHeading{
@@ -92,6 +91,12 @@ body{
     min-block-size: var(--encore-control-size-medium, 48px);
 }
 
+.redirect{
+    margin: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
 #logog{
    margin-left: -20px;
 }
@@ -138,12 +143,14 @@ body{
 
 #p{
     color: white;
-    margin-right: 26%;
+    margin-right: 28%;
     margin-top: 5%;
+    text-align: center;
 }
 #P{
     color: white;
-    margin-right: 35%;
+    margin-right: 36%;
+    text-align: center;
 }
 
  button{
@@ -177,6 +184,7 @@ body{
 }
 .Forget{
     margin-top: 4%;
+    text-align: center;
 }
 
 .Forget a{
@@ -190,6 +198,7 @@ body{
 
 .acount{
     margin-top: 7%;
+    text-align: center;
 }
 #acount{
     color: white;
@@ -215,6 +224,7 @@ body{
 .footer{
     margin-top: 10%;
     padding-bottom: 3%;
+    text-align: center;
    
 }
 

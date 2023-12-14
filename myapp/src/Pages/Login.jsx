@@ -3,35 +3,40 @@ import SpotifyLogo from '../Assets/SpotifyLogo.png'
 import G from '../Assets/G.png'
 import F from '../Assets/F.png'
 import A from '../Assets/A.png'
-import '../Style/Login.css'
+import "../Styles/login.css"
 
 function Login() {
 
 
   return (
     <div className = "LoginMain">
+
        <div className='LoginNavbar'>
-      <div className='logo'>
-          <img src={SpotifyLogo} width={50}/><label>Spotify</label>
-    </div>
-    </div>
+           <div className='logo'>
+                <img src={SpotifyLogo} width={50}/><label>Spotify</label>
+           </div>
+       </div>
        
      <div className='LoginContainer'>
-     <form>
-        <div className='LoginHeading'>
-         <h1>Log in to Spotify</h1>
-        </div>
-      <div>
-      <a href="#" class="ButtonGoogle"><span id='logog'><img src={G} width={25} height={24}/></span>Continue with Google</a>
+         <form>
+             <div className='LoginHeading'>
+                 <h1>Log in to Spotify</h1>
+             </div>
+
+      <div className='redirect'>
+           <a href="#" class="ButtonGoogle"><span id='logog'><img src={G} width={25} height={24}/></span>Continue with Google</a>
       </div>
-      <div>
-      <a href="#" class="ButtonGoogle"><span id='logog'><img src={F} width={25} height={24}/></span>Continue with Facebook</a>
+
+      <div className='redirect'>
+          <a href="#" class="ButtonGoogle"><span id='logog'><img src={F} width={25} height={24}/></span>Continue with Facebook</a>
       </div>
-      <div>
-      <a href="#" class="ButtonGoogle"><span id='logog'><img src={A} width={28} height={25}/></span>Continue with Apple</a>
+
+      <div className='redirect'>
+           <a href="#" class="ButtonGoogle"><span id='logog'><img src={A} width={28} height={25}/></span>Continue with Apple</a>
       </div>
-      <div>
-      <a href="#" class="ButtonGoogle">Continue with phone </a>
+
+      <div className='redirect'>
+          <a href="#" class="ButtonGoogle">Continue with phone </a>
       </div>
       
       <div id='hr'></div>
@@ -49,8 +54,9 @@ function Login() {
          id="password" name="password" 
          placeholder='password' 
          />
+        <div className='redirect'> 
        <button type='submit'>Log In</button>
-       
+       </div>
       </div>
       </form>
       
