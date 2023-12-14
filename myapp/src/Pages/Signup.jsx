@@ -1,8 +1,8 @@
 import React from 'react'
-import googlelogo from '../../Assets/googlelogo.png'
-import faceebook from '../../Assets/faceebook.png'
-import '../../Styles/signup.css'
-import SpotifyLogo from '../../Assets/SpotifyLogo.png'
+import googlelogo from '../Assets/googlelogo.png'
+import faceebook from '../Assets/faceebook.png'
+import '../Styles/signup.css'
+import SpotifyLogo from '../Assets/SpotifyLogo.png'
 
 const Signup = () => {
   
@@ -18,12 +18,18 @@ const Signup = () => {
          <div className='container'>
 
              <div className='Heading'>  
-            
                  <h1>Sign up to start listening</h1>
+
                  <p>Email adress</p>
                  <div className='input'>
                  <input type="email" id="username" name="username" placeholder="name@domain.com"/>
                  </div>
+
+                 <p>Password</p>
+                 <div className='input'>
+                 <input type="password" id="password" name="password" placeholder="Enter your password"/>
+                 </div>
+
                  <a id="phone"href="#">Use phone number instead.</a>
                  <button>Next</button>
                  <div className='line-container'>

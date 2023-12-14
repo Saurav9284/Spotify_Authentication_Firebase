@@ -42,6 +42,7 @@
     font-weight: 700;
     font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     color: white;
+    margin-top: -9%;
 }
 
 .Heading p {
