@@ -1,0 +1,224 @@
+
+
+body{
+    /* border: 1px solid red; */
+    /* margin-top: 3%; */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+  }
+  .LoginNavbar{
+    /* border: 1px solid red; */
+    /* height: 80px; */
+    background-color: black;
+    padding: 1.5%;
+  }
+  
+  .logo img {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px; 
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .logo label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+  }
+
+
+
+.LoginMain{
+    align-items: center;
+}
+
+.LoginContainer{
+    background: black;
+    /* border: 1px solid red; */
+     width: 55%;
+     margin: auto;
+    margin-top: -2%;
+}
+
+.LoginHeading{
+    color: white;
+    text-align: center;
+    font-family: CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif);
+    font-size: 1.5rem;
+    margin-top: 10%;
+    padding: 5% 5%;
+
+}
+
+.ButtonGoogle{
+    padding: 1.5% !important;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1rem!important;
+    font-weight: 700;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    background-color: black;
+    border-radius: 500px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    user-select: none;
+    vertical-align: middle;
+    transform: translate3d(0px, 0px, 0px);
+    position: relative;
+    border: .1px solid var(--essential-subdued,rgb(255, 255, 255)) !important;
+    color: white!important;
+    min-block-size: 48px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+    inline-size: 45%;
+    padding-inline: 14px;
+    padding-block-start: var(--encore-spacing-minus-2, 8px);
+    padding-block-end: var(--encore-spacing-minus-2, 8px);
+    min-block-size: var(--encore-control-size-medium, 48px);
+}
+
+#logog{
+   margin-left: -20px;
+}
+
+#hr{
+   width: 70%;
+   margin: auto;
+   height: 0.5px !important;
+   background-color: white ;
+   margin-top: 6%;
+}
+
+.email input{
+    padding: 2% !important;
+    appearance: none;
+    background-image: none;
+    color: white ;
+    margin-top: 5px;
+    border: 0px;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    inline-size: 45%;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin-block: 0px;
+    border-radius: var(--encore-border-radius-medium, 4px);
+    padding-inline: 14px;
+    padding-block-start: var(--encore-spacing-minus-2, 8px);
+    padding-block-end: var(--encore-spacing-minus-2, 8px);
+    min-block-size: var(--encore-control-size-medium, 48px);
+    background-color: #121212 !important;
+    box-shadow: inset 0 0 0 1px var(--essential-subdued, #878787);
+    color: var(--text-base, #000000);
+    margin-left: 28%;
+    
+}
+
+.input input:hover {
+    border-color: rgb(26, 173, 26);
+}
+
+#p{
+    color: white;
+    margin-right: 26%;
+    margin-top: 5%;
+}
+#P{
+    color: white;
+    margin-right: 35%;
+}
+
+ button{
+    padding: 2% !important;
+    margin-top: 4%;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    background-color: #11e35e;
+    border: 0px;
+    border-radius: 500px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    vertical-align: middle;
+    transform: translate3d(0px, 0px, 0px);
+    min-inline-size: 0px;
+    align-self: center;
+    inline-size: 45%;
+    padding-inline: 14px;
+    padding-block-start: var(--encore-spacing-minus-2, 8px);
+    padding-block-end: var(--encore-spacing-minus-2, 8px);
+    min-block-size: var(--encore-control-size-medium, 48px);
+    
+}
+.Forget{
+    margin-top: 4%;
+}
+
+.Forget a{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.Forget a:hover{
+   color: #11e35e;
+}
+
+.acount{
+    margin-top: 7%;
+}
+#acount{
+    color: white;
+    color: #6a6a6a;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#acount a{
+    color: white;
+    font-size: 1.1rem;
+}
+
+#acount a:hover{
+    color: #11e35e;
+}
+
+#foot{
+    color: white;
+    color: #6a6a6a;
+    size: 1px !important;
+    font-size:13px !important;
+}
+.footer{
+    margin-top: 10%;
+    padding-bottom: 3%;
+   
+}
+
+.Navbar{
+    height: 80px;
+    background: black;
+}
