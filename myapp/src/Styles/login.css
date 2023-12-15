@@ -1,58 +1,50 @@
-body{
-    /* border: 1px solid red; */
-    /* margin-top: 3%; */
-    background-color: #121212;
+body {
+    background-color: #000000;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    
-  }
-  .LoginNavbar{
-    /* border: 1px solid red; */
-    /* height: 80px; */
+}
+
+.loginNavbar {
     background-color: black;
     padding: 1.5%;
-  }
-  
-  .logo img {
+}
+
+.logo img {
     margin-left: 10px;
     margin-top: 10px;
-    margin-right: 10px; 
+    margin-right: 10px;
     max-width: 100%;
     height: auto;
-  }
-  
-  .logo label {
+}
+
+.logo label {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
     font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
-  }
-
-
-
-.LoginMain{
-    align-items: center;
 }
 
-.LoginContainer{
-    background: black;
+.loginMain {
+    width: 100%;
+}
+
+.LoginContainer {
+    /* background: black; */
+    width: 30%;
+    margin: auto;
+    margin-top: -2%;
     /* border: 1px solid red; */
-     width: 55%;
-     margin: auto;
-     margin-top: -2%;
 }
 
-.LoginHeading{
+.LoginContainer h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     color: white;
     text-align: center;
-    font-family: CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif);
-    font-size: 1.5rem;
-    margin-top: 10%;
-    padding: 5% 5%;
-
 }
 
 .ButtonGoogle{
@@ -84,36 +76,36 @@ body{
     align-items: center;
     -webkit-box-pack: center;
     justify-content: space-around;
-    inline-size: 45%;
+    inline-size: 40%;
     padding-inline: 14px;
     padding-block-start: var(--encore-spacing-minus-2, 8px);
     padding-block-end: var(--encore-spacing-minus-2, 8px);
     min-block-size: var(--encore-control-size-medium, 48px);
 }
 
-.redirect{
+.redirect {
     margin: auto;
-    /* border: 1px solid red; */
     text-align: center;
+    width: 90%;
 }
 
 #logog{
    margin-left: -20px;
 }
 
-#hr{
-   width: 70%;
-   margin: auto;
-   height: 0.5px !important;
-   background-color: white ;
-   margin-top: 6%;
+#hr {
+    width: 70%;
+    margin: auto;
+    height: 0.5px !important;
+    background-color: white;
+    margin-top: 6%;
+    border-bottom: 1px solid white;
 }
 
-.email input{
-    padding: 2% !important;
+.input input {
     appearance: none;
     background-image: none;
-    color: white ;
+    color: white !important;
     margin-top: 5px;
     border: 0px;
     display: block;
@@ -121,7 +113,7 @@ body{
     font-weight: 400;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
-    inline-size: 45%;
+    inline-size: 70%;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     margin-block: 0px;
@@ -133,24 +125,19 @@ body{
     background-color: #121212 !important;
     box-shadow: inset 0 0 0 1px var(--essential-subdued, #878787);
     color: var(--text-base, #000000);
-    margin-left: 28%;
-    
+    margin: auto;
 }
 
 .input input:hover {
     border-color: rgb(26, 173, 26);
 }
 
-#p{
+.LoginContainer p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     color: white;
-    margin-right: 28%;
-    margin-top: 5%;
-    text-align: center;
-}
-#P{
-    color: white;
-    margin-right: 36%;
-    text-align: center;
+    margin-left: 15%;
 }
 
  button{
@@ -175,7 +162,7 @@ body{
     transform: translate3d(0px, 0px, 0px);
     min-inline-size: 0px;
     align-self: center;
-    inline-size: 45%;
+    inline-size: 80%;
     padding-inline: 14px;
     padding-block-start: var(--encore-spacing-minus-2, 8px);
     padding-block-end: var(--encore-spacing-minus-2, 8px);
@@ -187,39 +174,37 @@ body{
     text-align: center;
 }
 
-.Forget a{
-    color: white;
-    font-size: 1.1rem;
+#phone{
+    margin-top: 15px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    color: var(--text-bright-accent,#11e35e);
+    -webkit-box-align: center;
+    font-size: medium;
+    font-weight: bold;
 }
 
-.Forget a:hover{
-   color: #11e35e;
+.LoginContainer a{
+    color: white;
 }
 
-.acount{
-    margin-top: 7%;
-    text-align: center;
+#parag{
+    margin-top: 6%;
 }
-#acount{
-    color: white;
+.para{
+    margin-left: 11%;
     color: #6a6a6a;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-#acount a{
-    color: white;
-    font-size: 1.1rem;
+    font-size: 15px;
 }
 
-#acount a:hover{
-    color: #11e35e;
-}
+
 
 #foot{
     color: white;
     color: #6a6a6a;
     size: 1px !important;
     font-size:13px !important;
+    margin-left: -1%;
 }
 .footer{
     margin-top: 10%;
