@@ -21,6 +21,8 @@ function Login() {
      signInWithEmailAndPassword(auth , email , password)
      .then((userCredential)=>{
       console.log(userCredential);
+      localStorage.setItem("email",email);
+      navigate('/');
      })
      .catch((error)=>{
       console.log(error);
@@ -30,6 +32,7 @@ function Login() {
   const handlegoogle = () => {
       signInWithPopup(auth,provider).then((data)=>{
       setValue(data.user.email);
+      navigate('/');
       localStorage.setItem("email",data.user.email);
     })
 }

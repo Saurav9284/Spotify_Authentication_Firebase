@@ -1,0 +1,12 @@
+#childhome{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+#homehead{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    text-align: center;
+}

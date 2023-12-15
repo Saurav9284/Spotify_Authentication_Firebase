@@ -22,6 +22,8 @@ const Signup = () => {
      createUserWithEmailAndPassword(auth , email , password)
      .then((userCredential)=>{
       console.log(userCredential);
+      localStorage.setItem("email",email);
+      navigate('/login')
      })
      .catch((error)=>{
       console.log(error);
@@ -32,6 +34,7 @@ const Signup = () => {
       signInWithPopup(auth,provider).then((data)=>{
         setValue(data.user.email);
         localStorage.setItem("email",data.user.email);
+        navigate('/')
       })
   }
 
