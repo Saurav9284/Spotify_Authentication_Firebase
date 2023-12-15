@@ -1,5 +1,5 @@
-body {
-    background-color: #000000;
+* {
+    background-color: #121212;
 }
 
 .logo {
@@ -8,7 +8,6 @@ body {
 }
 
 .loginNavbar {
-    background-color: black;
     padding: 1.5%;
 }
 
@@ -55,7 +54,7 @@ body {
     font-size: 1rem!important;
     font-weight: 700;
     font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
-    background-color: black;
+    background-color: #121212;
     border-radius: 500px;
     cursor: pointer;
     text-align: center;
@@ -94,7 +93,7 @@ body {
 }
 
 #hr {
-    width: 70%;
+    width: 90%;
     margin: auto;
     height: 0.5px !important;
     background-color: white;
@@ -102,7 +101,7 @@ body {
     border-bottom: 1px solid white;
 }
 
-.input input {
+.fillbox input {
     appearance: none;
     background-image: none;
     color: white !important;
@@ -124,7 +123,7 @@ body {
     min-block-size: var(--encore-control-size-medium, 48px);
     background-color: #121212 !important;
     box-shadow: inset 0 0 0 1px var(--essential-subdued, #878787);
-    color: var(--text-base, #000000);
+    color: var(--text-base, #121212);
     margin: auto;
 }
 
@@ -215,5 +214,5 @@ body {
 
 .Navbar{
     height: 80px;
-    background: black;
+    background: #121212;
 }

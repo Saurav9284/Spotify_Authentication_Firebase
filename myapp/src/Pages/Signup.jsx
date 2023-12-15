@@ -7,12 +7,15 @@ import { useState } from 'react'
 import {auth,provider } from "../Firebase/firebase"
 import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
 import Homepage from './Homepage'
+import { useNavigate } from 'react-router-dom'
 
 const Signup = () => {
 
   const [email, setEmail] = useState('');
   const [password , setPassword] = useState('');
   const [value, setValue] = useState('');
+
+  const navigate = useNavigate();
 
   const singnup = (e) => {
      e.preventDefault();
@@ -32,6 +35,10 @@ const Signup = () => {
       })
   }
 
+  const home = () =>{
+    navigate('/')
+}
+
   useEffect(()=>{
       setValue(localStorage.getItem("email"));
   })
@@ -40,7 +47,7 @@ const Signup = () => {
       <div className='signupmain'>
 
          <div className='navbarauth'>
-           <div className='logo'>
+           <div className='logo' onClick={home}>
                <img src={SpotifyLogo} width={50}/><label>Spotify</label>
            </div>
          </div>
@@ -77,7 +84,7 @@ const Signup = () => {
                       />
                  </div>
 
-                 <a id="phone"href="#">Use phone number instead.</a>
+                 <a id="phonee"href="#">Use phone number instead.</a>
                  <button type='submit'>Next</button>
                  </form> 
                  <div className='line-container'>
@@ -97,7 +104,7 @@ const Signup = () => {
                       <div className='line-segment'></div>
                 </div>
                 <div id='parag'>
-                   <p ><span class="para">Already have an account? <a href="#">Log in here</a>.</span></p>
+                   <p ><span class="para">Already have an account? <a href="./Login">Log in here</a>.</span></p>
                 </div >
                 <div className='foot'>
                 <p id='footer'>This site is protected by reCAPTCHA and the Google Privacy Policy Terms of Service apply.</p>

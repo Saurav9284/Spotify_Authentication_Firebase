@@ -4,26 +4,60 @@ import G from '../Assets/G.png'
 import F from '../Assets/F.png'
 import A from '../Assets/A.png'
 import "../Styles/login.css"
+import { useState,useEffect } from 'react'
+import { auth , provider} from '../Firebase/firebase'
+import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+ 
+  const [email, setEmail] = useState('');
+  const [password , setPassword] = useState('');
+  const [value, setValue] = useState('');
+  const navigate = useNavigate();
 
+  const login = (e) => {
+     e.preventDefault();
+     signInWithEmailAndPassword(auth , email , password)
+     .then((userCredential)=>{
+      console.log(userCredential);
+     })
+     .catch((error)=>{
+      console.log(error);
+     })
+  }
+
+  const handlegoogle = () => {
+      signInWithPopup(auth,provider).then((data)=>{
+      setValue(data.user.email);
+      localStorage.setItem("email",data.user.email);
+    })
+}
+
+const home = () =>{
+      navigate('/')
+}
+
+  useEffect(()=>{
+      setValue(localStorage.getItem("email"));
+  })
 
     return (
         <div className="loginMain">
 
             <div className='LoginNavbar'>
-                <div className='logo'>
+                <div className='logo' onClick={home}>
                     <img src={SpotifyLogo} width={50} /><label>Spotify</label>
                 </div>
             </div>
 
             <div className='LoginContainer'>
-                <form>
+                <form onSubmit={login}>
                     <div className='LoginHeading'>
                         <h1>Log in to Spotify</h1>
                     </div>
 
-                    <div className='redirect'>
+                    <div className='redirect' onClick={handlegoogle}>
                         <a href="#" class="ButtonGoogle"><span id='logog'><img src={G} width={25} height={24} /></span>Continue with Google</a>
                     </div>
 
@@ -43,22 +77,29 @@ function Login() {
 
                     <p>Email or username</p>
 
-                    <div className='input'>
+                    <div className='fillbox'>
                         <input type='email'
                             id='username'
                             name='username'
                             placeholder='Email or username'
+                            value={email}
+                            onChange={(e)=>setEmail(e.target.value)}
                         />
                     </div>
                     <p> Password</p>
-                    <div className='input'>
+                    <div className='fillbox'>
                         <input type="password"
-                            id="password" name="password"
-                            placeholder='password'
+                                id="password" 
+                                name="password"
+                                placeholder='password'
+                                value={password}
+                                onChange={(e)=>setPassword(e.target.value)}
                         />
+
                         <div className='redirect'>
                             <button type='submit'>Log In</button>
                         </div>
+
                     </div>
                 </form>
 
@@ -70,7 +111,7 @@ function Login() {
                 <div id='hr'></div>
 
                 <div id='parag'>
-                   <p ><span class="para">Don't have an acount? <a href="#">Sign up for Spotify</a>.</span></p>
+                   <p ><span class="para">Don't have an acount? <a href="/Signup">Sign up for Spotify</a>.</span></p>
                 </div >
 
                 <div className='footer'>
